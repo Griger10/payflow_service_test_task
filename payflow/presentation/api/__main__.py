@@ -6,7 +6,7 @@ from payflow.infra.config import ServiceConfig
 def main() -> None:
     ServiceConfig()
     uvicorn.run(
-        "payflow.presentation.api.application:create_app",
+        "payflow.presentation.api.app:create_app",
         factory=True,
         host="0.0.0.0",
         port=8000,
